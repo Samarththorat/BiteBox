@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile</title>
+</head>
+
+<body>
+
+<form>
+    <table align="center">
+
+        <tr>
+            <th colspan="2">Create Profile</th>
+        </tr>
+
+        <tr>
+            <td><b>First Name:</b></td>
+            <td>
+                <input type="text"
+                       placeholder="First Name"
+                       required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><b>Last Name:</b></td>
+            <td>
+                <input type="text"
+                       placeholder="Last Name"
+                       required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><b>Date of Birth:</b></td>
+            <td>
+                <input type="date"
+                       required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><b>Enter age:</b></td>
+            <td>
+                <input type="number"
+                       placeholder="Age"
+                       step="1"
+                       min="1"
+                       required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><b>Gender:</b></td>
+            <td>
+                <input type="radio"
+                       name="gender"
+                       value="male"
+                       checked
+                       required> Male
+
+                <input type="radio"
+                       name="gender"
+                       value="female"> Female
+            </td>
+        </tr>
+
+        <tr>
+            <td><b>Current Address:</b></td>
+            <td>
+                <textarea rows="5"
+                          cols="25"
+                          required></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td><b>Permanent Address:</b></td>
+            <td>
+                <textarea rows="5"
+                          cols="25"
+                          required></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Create">
+            </td>
+        </tr>
+
+    </table>
+</form>
+
+</body>
+</html>
