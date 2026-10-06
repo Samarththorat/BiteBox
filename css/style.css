@@ -27,7 +27,6 @@ header {
 .logo {
 
     width: 170px;
-
     height: auto;
 
 }
@@ -46,7 +45,7 @@ nav a:hover {
 }
 
 /* Home Hero Section */
-#home-hero {
+#home-hero{
 
     background-image: url("../assets/images/home-hero-banner.jpg");
 
@@ -56,39 +55,59 @@ nav a:hover {
 
     background-size: cover;
 
-    height: 400px;
+    height: 430px;
+
+}
+#home-hero{
+
+    background-image: url("../assets/images/home-hero-banner.jpg");
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: cover;
+
+    height: 450px;
+
     padding: 55px 80px;
 
-    h1 {
-        color: white;
-        font-family: "Montserrat", sans-serif;
-        font-size: 53px;
-        font-weight: 800;
-        line-height: 58px;
-        width: 650px;
-        margin-bottom: 20px;
-    }
-
-    h1 span {
-        color: #F5A300;
-    }
-
-    p {
-        color: white;
-        font-size: 18px;
-        line-height: 28px;
-        width: 420px;
-        margin-bottom: 35px;
-    }
+}
+#home-hero h1{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 53px;
+    font-weight: 800;
+    line-height: 58px;
+    width: 650px;
+    margin-bottom: 20px;
 }
 
+#home-hero h1 span{
+    color: #F5A300;
+}
+/* Home Hero Description */
+
+#home-hero p{
+
+    color: white;
+
+    font-size: 18px;
+
+    line-height: 28px;
+
+    width: 420px;
+
+    margin-bottom: 35px;
+
+}
 /* Hero Buttons */
 
-.hero-buttons {
+.hero-buttons{
     margin-top: 35px;
 }
 
-.hero-buttons a {
+.hero-buttons a{
     display: inline-block;
     min-width: 180px;
     padding: 15px 30px;
@@ -98,27 +117,33 @@ nav a:hover {
     font-weight: 600;
     border-radius: 6px;
     transition: 0.3s;
+}
+.order-btn{
 
-    .order-btn {
-        background-color: #F44336;
-        color: white;
-        margin-right: 15px;
-    }
+    background-color: #F44336;
 
-    .menu-btn {
-        background-color: transparent;
-        color: white;
-        border: 2px solid white;
-    }
+    color: white;
+
+    margin-right: 15px;
+
 }
 
-.order-btn:hover {
+.menu-btn{
+
+    background-color: transparent;
+
+    color: white;
+
+    border: 2px solid white;
+
+}
+.order-btn:hover{
 
     background-color: #D32F2F;
 
 }
 
-.menu-btn:hover {
+.menu-btn:hover{
 
     background-color: white;
 
@@ -126,7 +151,8 @@ nav a:hover {
 
 }
 
-#menu-hero {
+
+#menu-hero{
     background-image: url("../assets/images/menu-hero.png");
 
     background-repeat: no-repeat;
@@ -135,45 +161,41 @@ nav a:hover {
 
     background-size: cover;
 
-    height: 300px;
+    height: 320px;
     text-align: center;
     padding-top: 65px;
-
-    h1 {
-        font-family: "Great Vibes", cursive;
-        font-size: 56px;
-        line-height: 60px;
-
-        font-weight: 400;
-
-        color: white;
-
-        text-align: center;
-
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-
-        margin-bottom: 10px;
-    }
-
-    p {
-        color: white;
-
-        font-size: 20px;
-
-        line-height: 34px;
-
-        width: 700px;
-
-        text-align: center;
-
-        margin: 0 auto 35px;
-    }
-
 }
+#menu-hero h1{
+    font-family: "Great Vibes", cursive;
+   font-size:56px;
+   line-height:60px;
 
+    font-weight: 400;
+
+    color: white;
+
+    text-align: center;
+
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+
+    margin-bottom: 10px;
+}
+#menu-hero p{
+    color: white;
+
+    font-size: 20px;
+
+    line-height: 34px;
+
+    width: 700px;
+
+    text-align: center;
+
+    margin: 0 auto 35px;
+}
 /* Browse Categories Section */
 
-#categories {
+#categories{
 
     background-color: #ffffff;
 
@@ -181,18 +203,224 @@ nav a:hover {
 
     text-align: center;
 
-    h2 {
-        font-size: 40px;
+}
+#categories h2{
+    font-size: 40px;
 
-        font-weight: 700;
+    font-weight: 700;
 
-        color: #222222;
+    color: #222222;
 
-        margin-bottom: 50px;
+    margin-bottom: 50px;
 
-        position: relative;
+    position: relative;
 
-        display: inline-block;
-    }
+    display: inline-block;
+}
+
+
+
+
+#contact-hero{
+    background-image: url("../assets/images/contact-hero.png");
+
+    background-repeat: no-repeat;
+
+    background-position: 100% 80%;
+
+    background-size: cover;
+
+    height: 320px;
+
+    padding: 60px 80px;
+
+    text-align: left;
+}
+#contact-hero h2{
+    color: #ffffff;
+
+    font-size: 52px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+#contact-hero h2 span{
+
+    color: #ff6b00;
+
+}
+/* Contact Hero Subtitle */
+#contact-hero h3{
+
+    color: #ffffff;
+
+    font-size: 24px;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+
+}
+#contact-hero hr{
+    width: 70px;
+
+    height: 4px;
+
+    background-color: #ff6b00;
+
+    border: none;
+
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+}
+/* Contact Hero Description */
+
+#contact-hero p{
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+    line-height: 30px;
+
+    width: 460px;
+
+}
+
+#about-hero{
+    background-image: url("../assets/images/about-hero.png");
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: cover;
+
+    height: 320px;
+
+    padding: 60px 80px;
+
+    text-align: center;
+}
+#about-hero h2{
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* About Highlight */
+#about-hero h2 span{
+    font-family: "Allura", cursive;
+    color: #ff6b00;
+    font-size: 62px;
+    font-weight: 400;
+    text-align: left;
+      display: block;
+        margin-bottom: 10px;
+}
+/* About Hero Subtitle */
+
+#about-hero p{
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    font-weight: 400;
+
+    margin-bottom: 18px;
+
+    text-align: left;
+
+}
+/* Decorative Line */
+
+#about-hero hr{
+
+    width: 45px;
+
+    height: 3px;
+
+    background-color: #ff6b00;
+
+    border: none;
+
+    border-radius: 20px;
+
+}
+
+
+
+
+/* Cart Hero Heading */
+#cart-hero {
+ background-image: url("../assets/images/cart-hero.png");
+ 
+    background-repeat: no-repeat;
+ 
+    background-position: center;
+ 
+    background-size: cover;
+ 
+    height: 320px;
+ 
+    padding: 60px 80px;
+ 
+    text-align: center;
+}
+
+#cart-hero h1{
+    color: #ffffff;
+
+    font-family: "Lobster", cursive;
+
+    font-size: 58px;
+
+    font-weight: 400;
+
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+
+    margin-bottom: 20px;
+}
+.divider{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.divider hr{
+    display: inline-block;
+    width: 120px;
+    height: 3px;
+    background-color: #ff6b00;
+    border: none;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+.divider img{
+    width: 34px;
+    height: 34px;
+    margin: 0 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+/* Cart Hero Description */
+
+#cart-hero p{
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    line-height: 30px;
+
+    width: 720px;
+
+    margin: 0 auto;
 
 }
