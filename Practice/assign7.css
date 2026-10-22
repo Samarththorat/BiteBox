@@ -1,0 +1,57 @@
+body {
+    background-color: white;
+}
+.main {
+    width: 700px;
+    height: 365px;
+    margin: 100px auto;
+    border: 1px solid black;
+    text-align: center;
+}
+
+h1 {
+    font-family: Georgia;
+    font-size: 30px;
+    text-shadow: 2px 2px 3px gray;
+}
+.description {
+    width: 320px;
+    height: 35px;
+    margin: 20px auto;
+    padding: 5px;
+
+    border: 2px solid black;
+
+    font-family: Georgia;
+    font-size: 10px;
+    font-style: italic;
+
+    box-shadow: 7px 7px 5px gray;
+}
+.logo {
+    width: 300px;
+    height: 180px;
+    margin: 40px auto;
+
+    border-bottom: 5px solid #cccc99;
+
+    box-shadow: 7px 5px 5px gray;
+}
+
+.logo h2 {
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.it {
+    color: gray;
+}
+
+.vedant {
+    color: #b6d900;
+}
+.tagline {
+    color: gray;
+    font-size: 18px;
+    margin-top: -20px;
+}
