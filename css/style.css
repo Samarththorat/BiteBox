@@ -1853,7 +1853,7 @@ button:hover {
     gap: 16px;
 }
 
-cart-item img {
+.cart-item img {
     width: 90px;
     height: 62px;
     object-fit: cover;
@@ -3345,4 +3345,117 @@ footer>p {
     #statistics article:nth-child(4) {
         border-left: 1px solid #3a3a3a;
     }
+}
+/* BiteBox cart interactions */
+.cart-count {
+    display: inline-flex;
+    min-width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ff6b00;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.empty-cart {
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.empty-cart h3 {
+    margin-bottom: 8px;
+}
+
+.bitebox-notification {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1000;
+    max-width: min(360px, calc(100vw - 32px));
+    padding: 14px 20px;
+    border-radius: 8px;
+    background: #222222;
+    color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+}
+
+.bitebox-notification.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.bitebox-notification.is-error {
+    background: #a32820;
+}
+
+@media (max-width: 767px) {
+    .bitebox-notification {
+        right: 16px;
+        bottom: 16px;
+        left: 16px;
+        max-width: none;
+    }
+}
+
+	
+.menu-search {
+    width: 360px;
+    height: 48px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Search Input */
+.menu-search input {
+    flex: 1;
+    height: 100%;
+    padding: 0 18px;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: transparent;
+}
+
+/* Placeholder */
+.menu-search input::placeholder {
+    color: #777;
+}
+
+/* Search Button */
+.menu-search button {
+    width: 52px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #ff4b2b;
+    cursor: pointer;
+}
+
+.menu-search button:hover{
+    background-color: #ac1f06 ;
+
+}
+
+/* Search Icon */
+.menu-search button img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }

@@ -22,7 +22,7 @@
             |
             <a href="contact.html">Contact</a>
             |
-            <a href="cart.html">Cart</a>
+            <a href="cart.html" aria-label="Cart, 0 items">Cart <span class="cart-count" data-cart-count aria-live="polite">0</span></a>
             <img src="assets/icons/cart.png" alt="Cart Icon" width="22" height="22">
         </nav>
     </header>
@@ -41,26 +41,26 @@
         <h2>Browse Categories</h2>
 
         <div>
-            <article>
+            <article data-category="pizza" role="button" tabindex="0" aria-pressed="false">
                 <img src="assets/icons/pizza-icon.png" alt="Pizza" width="120" height="120">
                 <h3>Pizza</h3>
             </article>
 
-            <article>
+            <article data-category="burger" role="button" tabindex="0" aria-pressed="false">
                 <img src="assets/icons/burger-icon.png" alt="Burger" width="120" height="120">
                 <h3>Burger</h3>
             </article>
-            <article>
+            <article data-category="pasta" role="button" tabindex="0" aria-pressed="false">
                 <img src="assets/icons/pasta-icon.png" width="120" height="120">
                 <h3>Pasta</h3>
             </article>
 
-            <article>
+            <article data-category="biryani" role="button" tabindex="0" aria-pressed="false">
                 <img src="assets/icons/biryani-icon.png" width="120" height="120">
                 <h3>Biryani</h3>
             </article>
 
-            <article>
+            <article data-category="desserts" role="button" tabindex="0" aria-pressed="false">
                 <img src="assets/icons/dessert-icon.png" alt="Desserts" width="120" height="120">
                 <h3>Desserts</h3>
             </article>
@@ -72,9 +72,17 @@
             Popular Dishes
             <span></span>
         </h2>
+
+        <div class="menu-search">
+            <input type="text" id="menu-search" placeholder="Search for dishes..." >
+            <button type="button" id="search-button">
+                <img src="assets/icons/search.png" alt="Search" width="20" height="20">
+            </button>
+        </div>
+
         <div>
             <!-- Menu Item 1 -->
-            <article>
+            <article data-product-id="margherita-pizza" data-category="pizza">
                 <span class="tag">Bestseller</span>
                 <img src="assets/images/pizza.png" width="220">
                 <h3>Margherita Pizza</h3>
@@ -87,7 +95,7 @@
             <br>
 
             <!-- Menu Item 2 -->
-            <article>
+            <article data-product-id="cheese-burger" data-category="burger">
                 <img src="assets/images/burger.png">
                 <h3>Cheese Burger</h3>
                 <p class="rating">⭐⭐⭐⭐⭐<small>(98)</small></p>
@@ -99,7 +107,7 @@
             <br>
 
             <!-- Menu Item 3 -->
-            <article>
+            <article data-product-id="creamy-alfredo-pasta" data-category="pasta">
                 <img src="assets/images/pasta.png">
                 <h3>Creamy Alfredo Pasta</h3>
                 <p class="rating">⭐⭐⭐⭐⭐ <small> (85) </small>
@@ -112,7 +120,7 @@
             <br>
 
             <!-- Menu Item 4 -->
-            <article>
+            <article data-product-id="chicken-biryani" data-category="biryani">
                 <span class="tag spicy">Spicy</span>
                 <img src="assets/images/biryani.png">
                 <h3>Chicken Biryani</h3>
@@ -124,7 +132,7 @@
             </article>
             <br>
             <!-- Menu Item 5 -->
-            <article>
+            <article data-product-id="choco-lava-cake" data-category="desserts">
                 <img src="assets/images/cake.png">
                 <h3>Choco Lava Cake</h3>
                 <p class="rating"> ⭐⭐⭐⭐⭐ <small>(75)</small> </p>
@@ -136,7 +144,7 @@
             <br>
 
             <!-- Menu Item 6 -->
-            <article>
+            <article data-product-id="veg-club-sandwich" data-category="burger">
                 <img src="./assets/images/sandwitch.png">
                 <h3>Veg Club Sandwich</h3>
                 <p class="rating">⭐⭐⭐⭐⭐<small>(60)</small> </p>
@@ -159,9 +167,9 @@
             <a href="menu.html"> Order Now </a>
         </div>
 
-        
+
     </section>
-<footer>
+    <footer>
         <!-- Footer Logo Section -->
         <div class="footer-container">
             <section>
@@ -169,7 +177,7 @@
                 <p> Delicious food delivered to your doorstep.
                     Fresh, fast and tasty!
                 </p>
-                
+
                 <div class="footer-socials">
                     <a href="#">
                         <img src="assets/images/facebook.png" alt="Facebook" width="35" height="35">
@@ -241,6 +249,7 @@
         <p> © 2026 BiteBox. All Rights Reserved. </p>
 
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
